@@ -127,9 +127,9 @@ const DOM = {
 //Formatação do valor na tabela para ficar em real
 const Utils = {
     formatAmount(value) {
-        value = Number(value.replace(/\,\./g, "")) * 100
+        value = value * 100
 
-        return value
+        return Math.round(value)
     },
 
     formatDate(date) {
